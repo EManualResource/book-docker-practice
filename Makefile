@@ -1,4 +1,5 @@
 SOURCE=./source
+SOURCE_CONFIG_FILE=$(SOURCE)/book.json
 TMP_BOOK=./book
 DEST=./dist
 IGNORE=.git
@@ -18,7 +19,7 @@ pre-build:
 	rm -rf $(TMP_BOOK)/$(IGNORE)
 
     # create book.json
-	gitbook-ext jsonmerge $(SOURCE)/book.json $(EXT_CONFIG)/book.json > $(TMP_BOOK)/book.json
+	gitbook-ext jsonmerge $(SOURCE_CONFIG_FILE) $(EXT_CONFIG)/book.json > $(TMP_BOOK)/book.json
 
 build:
 	gitbook build $(TMP_BOOK) $(DEST)/book
