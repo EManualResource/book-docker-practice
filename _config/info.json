@@ -1,0 +1,17 @@
+{
+	"info": {
+		"name": "docker-practice",
+		"name_cn": "Docker从入门到实践",
+		"md5": "71fc5dfa91baa65440f80d6740490337",
+		"icon_url": "http://emanualresource.github.io/resource/icons/docker.png",
+		"url": "http://emanualresource.github.io/book-docker-practice/dist/book.zip",
+		"author": "yeasy",
+		"homepage": "https://github.com/yeasy/docker_practice",
+		"maintainers": [
+			{
+				"name": "Jayin Ton",
+				"email": "tonjayin@gmail.com"
+			}
+		]
+	}
+}
