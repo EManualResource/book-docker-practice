@@ -19,7 +19,7 @@ pre-build:
 	cp -r $(SOURCE) $(TMP_BOOK)
 	rm -rf $(TMP_BOOK)/$(IGNORE)
 
-    # create book.json
+	# create book.json
 	gitbook-ext jsonmerge $(SOURCE_CONFIG_FILE) $(EXT_CONFIG_FILES) > $(TMP_BOOK)/book.json
 
 build:
@@ -32,7 +32,7 @@ package:
 	cd dist && zip -vr ./book.zip ./book/ 
 
 	# post package
-	md5 -q $(DEST)/book.zip > $(DEST)/md5
+	md5 $(DEST)/book.zip > $(DEST)/md5
 
 finish: 	
 	# clean up
